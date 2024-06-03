@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pata</h1>
+    <span>
+      <a href="#">HOME</a>
+      <a href="#">PETS</a>
+      <a href="#">SERVIÇOS</a>
+      <div class="userIcon"></div>
+    </span>
+  </header>
+  
+  <div class="principal">
+    <div class="pet-form">
+      <div class="pet-image">
+        <input type="file" id="petImage" name="petImage" accept="image/png">
+      </div>
+      <div class="pet-details">
+        <label for="petName">Nome do Animal:</label>
+        <input type="text" id="petName" name="petName" required>
+        
+        <label for="petAge">Idade:</label>
+        <input type="number" id="petAge" name="petAge" required>
+        
+        <label for="petBreed">Raça:</label>
+        <input type="text" id="petBreed" name="petBreed" required>
+        
+        <label for="petSpecies">Espécie:</label>
+        <input type="text" id="petSpecies" name="petSpecies" required>
+        
+        <label for="petWeight">Peso:</label>
+        <input type="number" id="petWeight" name="petWeight" step="0.01" required>
+        
+        <label for="petOwner">Nome do Dono:</label>
+        <input type="text" id="petOwner" name="petOwner" required>
+        
+        <label for="petContact">Contato do Dono:</label>
+        <input type="text" id="petContact" name="petContact" required>
+        
+        <button type="button" onclick="submitForm()">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="confirmation" id="confirmation" style="display: none;">
+    <div class="confirmation-content">
+      <div class="confirmation-image">
+        <img id="confirmImage" src="" alt="Pet Image">
+      </div>
+      <div class="confirmation-details">
+        <p id="confirmName"></p>
+        <p id="confirmBreed"></p>
+        <p id="confirmAge"></p>
+        <p id="confirmWeight"></p>
+        <p>O cadastro do seu animal está em avaliação. Se todas as informações estiverem corretas, ele será adicionado ao nosso catálogo. Você receberá uma notificação por e-mail quando o processo for concluído.</p>
+      </div>
+      <button onclick="closeConfirmation()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

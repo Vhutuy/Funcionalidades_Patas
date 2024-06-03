@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca Avançada de Adoção</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Pata</h1>
+    <span>
+      <a href="#">HOME</a>
+      <a href="#">PETS</a>
+      <a href="#">SERVIÇOS</a>
+      <div class="userIcon"></div>
+    </span>
+  </header>
+
+  <div class="advertisement">
+    <img src="fotos/Campanha de Vacinacao.png" alt="">
+  </div>
+  
+  <div class="principal">
+    <div class="search-container">
+      <label for="breed">Raça:</label>
+      <input type="text" id="breed" name="breed">
+
+      <label for="species">Espécie:</label>
+      <input type="text" id="species" name="species">
+
+      <label for="color">Cor:</label>
+      <input type="text" id="color" name="color">
+
+      <label for="age">Idade:</label>
+      <input type="number" id="age" name="age" min="0">
+
+      <label for="size">Tamanho:</label>
+      <select id="size" name="size">
+        <option value="">Selecione</option>
+        <option value="Pequeno">Pequeno</option>
+        <option value="Médio">Médio</option>
+        <option value="Grande">Grande</option>
+      </select>
+
+      <label for="location">Localização:</label>
+      <input type="text" id="location" name="location">
+
+      <button onclick="searchAnimals()">Buscar</button>
+    </div>
+
+    <div class="animals-container" id="animalsContainer">
+      <!-- Animais serão exibidos aqui -->
+    </div>
+  </div>
+  <img src="" alt="">
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-animal-info"></div>
+      <button id="interestButton">Tenho Interesse</button>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

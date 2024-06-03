@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pata</h1>
+        <span>
+            <a href="#">HOME</a>
+            <a href="#">PETS</a>
+            <a href="#">SERVIÇOS</a>
+            <div class="userIcon"></div>
+        </span>
+    </header>
+
+    <div class="principal">
+        <div class="user-form">
+            <p>Já possui conta. <a href="login.html">Login</a></p>
+            <h2>Cadastro de Usuário</h2>
+            <label for="userName">Nome:</label>
+            <input type="text" id="userName" name="userName" required>
+      
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+      
+            <label for="userPassword">Senha:</label>
+            <input type="password" id="userPassword" name="userPassword" required>
+      
+            <label for="userPhone">Telefone:</label>
+            <input type="tel" id="userPhone" name="userPhone" required>
+      
+            <label for="userBirthDate">Data de nascimento:</label>
+            <input type="date" id="userBirthDate" name="userBirthDate" required>
+      
+            <label for="userGender">Gênero:</label>
+            <select id="userGender" name="userGender" required>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+      
+            <label for="userAddress">Endereço:</label>
+            <input type="text" id="userAddress" name="userAddress" required>
+      
+            <label for="userChildren">Número de crianças em casa:</label>
+            <input type="number" id="userChildren" name="userChildren" required>
+      
+            <label for="userApartment">Mora em apartamento?</label>
+            <select id="userApartment" name="userApartment" required>
+              <option value="sim">Sim</option>
+              <option value="não">Não</option>
+            </select>
+      
+            <label for="userOutdoorArea">Área externa disponível?</label>
+            <select id="userOutdoorArea" name="userOutdoorArea" required>
+              <option value="sim">Sim</option>
+              <option value="não">Não</option>
+            </select>
+      
+            <label for="userExperience">Tem experiência com animais?</label>
+            <select id="userExperience" name="userExperience" required>
+              <option value="sim">Sim</option>
+              <option value="não">Não</option>
+            </select>
+      
+            <label for="userPetPreference">Preferência por tipos de pets:</label>
+            <select id="userPetPreference" name="userPetPreference" required>
+              <option value="cachorro">Cachorro</option>
+              <option value="gato">Gato</option>
+              <option value="outro">Outro</option>
+            </select>
+      
+            <label for="userPetSize">Tamanho preferido do pet:</label>
+            <select id="userPetSize" name="userPetSize" required>
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+      
+            <label for="userAvailability">Tempo disponível para cuidar do pet (horas por dia):</label>
+            <input type="number" id="userAvailability" name="userAvailability" required>
+      
+            <label for="userMotivation">Motivação para adotar:</label>
+            <textarea id="userMotivation" name="userMotivation" required></textarea>
+      
+            <label for="userReferences">Referências:</label>
+            <textarea id="userReferences" name="userReferences" required></textarea>
+      
+            <label for="userAdoptionHistory">Histórico de adoções anteriores:</label>
+            <textarea id="userAdoptionHistory" name="userAdoptionHistory" required></textarea>
+      
+            <label for="userHomePhotos">Fotos da residência:</label>
+            <input type="file" id="userHomePhotos" name="userHomePhotos" accept="image/*" required multiple>
+      
+            <button type="button" onclick="registerUser()">Cadastrar</button>
+        </div>
+    </div>
+
+    <div class="confirmation" id="confirmation" style="display: none;">
+        <div class="confirmation-content">
+            <div class="confirmation-image">
+                <img id="confirmImage" src="" alt="Pet Image">
+            </div>
+            <div class="confirmation-details">
+                <p id="confirmName"></p>
+                <p id="confirmBreed"></p>
+                <p id="confirmAge"></p>
+                <p id="confirmWeight"></p>
+                <p>O cadastro do seu animal está em avaliação. Se todas as informações estiverem corretas, ele será
+                    adicionado ao nosso catálogo. Você receberá uma notificação por e-mail quando o processo for
+                    concluído.</p>
+            </div>
+            <button onclick="closeConfirmation()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

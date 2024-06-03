@@ -1,0 +1,188 @@
+body {
+    height: 100vh;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    background: purple;
+    color: white;
+    padding: 1%;
+  }
+  
+  header span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  header h1 {
+    font-size: 400%;
+  }
+
+  .tit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .userIcon {
+    background: white;
+    width: 40%;
+    height: 130%;
+    border-radius: 50%;
+    margin: 5%;
+  }
+  
+  header span a {
+    margin: 1%;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+  }
+  
+  .principal {
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pet-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding: 2%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pet-image {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .pet-image input {
+    display: block;
+    margin: auto;
+  }
+  
+  .pet-details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .pet-details label {
+    margin: 10px 0 5px;
+  }
+  
+  .pet-details input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkviolet;
+  }
+  
+  .evaluation-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .pet-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .pet-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .pet-details {
+    flex: 1;
+  }
+  .pet-details h2, .pet-details p {
+    margin: 5px 0;
+  }
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.5em;
+    justify-content: center;
+    padding: 10px;
+  }
+  .star-rating input {
+    display: none;
+  }
+  .star-rating label {
+    color: grey;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 30px;
+  }
+  .star-rating input:checked ~ label,
+  .star-rating input:checked ~ label ~ label {
+    color: gold;
+  }
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: gold;
+  }
+  .evaluation-description {
+    margin-top: 20px;
+  }
+  .evaluation-description textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#report {
+  background-color: red;
+}
+  

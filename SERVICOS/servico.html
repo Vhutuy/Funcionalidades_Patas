@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Serviço</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Serviço</h1>
+  </header>
+
+  <div class="container">
+    <form id="serviceForm" action="#" method="POST">
+      <div class="form-group">
+        <label for="serviceImage">Foto do Serviço:</label>
+        <input type="file" id="serviceImage" name="serviceImage" accept="image/*">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" rows="4" cols="50" placeholder="Descreva o serviço"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Preço:</label>
+        <input type="number" id="price" name="price" placeholder="Preço do serviço">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Localização:</label>
+        <input type="text" id="location" name="location" placeholder="Localização do serviço">
+      </div>
+
+      <button type="submit">Cadastrar Serviço</button>
+    </form>
+  </div>
+</body>
+</html>

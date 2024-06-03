@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Pata</h1>
+    <span>
+      <a href="#">HOME</a>
+      <a href="#">PETS</a>
+      <a href="#">SERVIÇOS</a>
+      <div class="userIcon"></div>
+    </span>
+  </header>
+
+  <div class="principal">
+    <div class="evaluation-container">
+      <div class="pet-info">
+        <img src="CachorroReal.png" alt="Foto do Pet">
+        <div class="pet-details">
+          <h2>Nome: Bella</h2>
+          <p>Idade: 3 anos</p>
+          <p>Raça: Labrador</p>
+          <p>Descrição: Bella é uma cadela amigável e brincalhona, que adora correr e brincar no parque. Ela é ótima com crianças e outros animais.</p>
+        </div>
+      </div>
+
+      <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5">
+        <label for="5-stars" title="5 estrelas">★</label>
+        <input type="radio" id="4-stars" name="rating" value="4">
+        <label for="4-stars" title="4 estrelas">★</label>
+        <input type="radio" id="3-stars" name="rating" value="3">
+        <label for="3-stars" title="3 estrelas">★</label>
+        <input type="radio" id="2-stars" name="rating" value="2">
+        <label for="2-stars" title="2 estrelas">★</label>
+        <input type="radio" id="1-stars" name="rating" value="1">
+        <label for="1-stars" title="1 estrela">★</label>
+      </div>
+
+      <div class="evaluation-description">
+        <label for="evaluation">Descrição da Avaliação:</label>
+        <textarea id="evaluation" placeholder="Escreva aqui sobre sua experiência com a adoção..."></textarea>
+      </div>
+
+      <button class="submit-btn" onclick="submitEvaluation()">Enviar Avaliação</button>
+
+      <button class="submit-btn" id="report" onclick="">Reportar Conversa</button>
+    </div>
+  </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
